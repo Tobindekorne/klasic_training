@@ -1,0 +1,116 @@
+body {
+  background-color: #d1d1d1;
+  color: #7b00a9;
+  font-family: 'Oswald', sans-serif;
+  padding: 15px;
+  padding-top: 150px;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d1d1d1;
+}
+
+nav {
+  background-color: #d1d1d1;
+}
+
+nav a {
+  width: 200px;
+  margin: auto;
+  color: #7b00a9;
+}
+
+#quote-box {
+  background-color: #fff;
+  height: 15rem;
+  font-size: 2rem;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#insta,
+#email {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#social {
+  position: absolute;
+  display: block;
+  float: left;
+}
+
+#logo {
+  width: 200px;
+}
+
+#about h1 {
+  margin: 3rem 0;
+}
+
+.about-image {
+  width: 75px;
+}
+hr {
+  border-top: 1px solid #7b00a9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 30%;
+}
+
+section p {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  /* padding: 1em; */
+}
+
+#intro-image {
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.lg-font {
+  font-family: 'Cormorant', serif;
+}
+
+.lt-font {
+  font-weight: 300;
+}
+
+.bld-font {
+  font-weight: 600;
+}
+
+button {
+  color: #7b00a9;
+  background-color: #d1d1d1;
+  border: 2px solid #7b00a9;
+  border-radius: 22px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 30px;
+}
