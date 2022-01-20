@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,68 +17,64 @@
       rel="stylesheet"
     />
     <script defer src="/fa/js/all.js"></script>
-    <link rel="stylesheet" href="flex_style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Klasic Training</title>
   </head>
   <body>
-    <div class="fixed-navbar">
-      <nav class="navbar">
-        <div id="social-container" class="">
-          <div class="social">
-            <div class="social--item">
-              <a href="https://instagram.com/klasictraining"
-                ><i id="insta" class="fab fa-instagram"></i
-              ></a>
-            </div>
-          </div>
-          <div class="social">
-            <div class="social--item">
-              <a href="mailto:someone@yoursite.com"
-                ><i id="email" class="far fa-envelope"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar navbar-default fixed-top">
+      <div id="logo-div" class="container">
         <a href="#intro"
-          ><img id="logo" src="images/logo.svg" alt="Klasic Training"
+          ><img
+            id="logo"
+            src="images/logo.svg"
+            alt="Klasic Training"
+            class="navbar-brand"
         /></a>
-      </nav>
-    </div>
-
-    <div class="two-col-container">
-      <div class="side-image">
-        <img id="intro-image" src="images/intro.jpg" alt="" />
       </div>
-      <div class="side-text">
-        <h1 class="lg-font">KLASIC TRAINING</h1>
+      <div id="social" class="float-left">
+        <a href="https://instagram.com/klasictraining"
+          ><i id="insta" class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:someone@yoursite.com"
+          ><i id="email" class="far fa-envelope"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div id="intro" class="row">
+      <div class="col-lg-6 col-xs-12 float-left">
+        <img id="intro-image" class="col-12" src="images/intro.jpg" alt="" />
+      </div>
+      <div id="intro-text" class="text-center col-lg-6 col-xs-12 float-left">
+        <h1 class="display-1 text-uppercase lg-font">KLASIC TRAINING</h1>
         <hr />
-        <div>
+        <div class="">
           <div class="v-align-center">
             <h2>Lessons & Training</h2>
             <p class="lt-font">Young horses to FEI in Dressage</p>
           </div>
         </div>
         <hr />
-        <div>
+        <div class="">
           <p class="bld-font v-align-center">
             At Klasic Training my goal is to help achieve trust and harmony
             between horse and rider through the levels of dressage.
           </p>
         </div>
         <hr />
-        <div>
-          <button>CONTACT ME</button>
+        <div class="">
+          <button class="text-uppercase">CONTACT ME</button>
         </div>
       </div>
     </div>
 
     <div id="quote-box-container">
-      <div id="blue-flower-container">
+      <div id="blue-flower-div" class="container">
         <img id="blue-flower" src="images/blue_blob.svg" alt="flower" />
       </div>
-      <div id="quote-box">
-        <p>
+      <div id="quote-box" class="d-flex justify-content-center">
+        <p class="text-center align-self-center col-lg-8">
           "The goal of dressage riding should be to bring the horse and rider
           together in harmony...a oneness of balance, purpose and athletic
           expression." - Walter Zettl
@@ -80,12 +82,14 @@
       </div>
     </div>
 
-    <div id="about">
-      <h1 class="lg-font">ABOUT BRITTNEY KLASIC</h1>
-      <div class="about-row">
-        <div class="about-section">
+    <div id="about" class="float-left">
+      <h1 class="text-center text-uppercase display-3 lg-font">
+        ABOUT BRITTNEY KLASIC
+      </h1>
+      <div>
+        <div class="text-center col-xs-12 col-lg-4 float-left">
           <img class="about-image" src="images/childhood.jpg" alt="" />
-          <h3 class="about-header">CHILDHOOD</h3>
+          <h3 class="text-uppercase lg-font">CHILDHOOD</h3>
           <p class="small-text">
             Brittney had a love and respect for horses since she could remember.
             She started riding at Central Arizona Riding Academy in Chandler, AZ
@@ -94,9 +98,9 @@
             which set the importance of cross-training.
           </p>
         </div>
-        <div class="about-section">
+        <div class="text-center col-xs-12 col-lg-4 float-left">
           <img class="about-image" src="images/dressage.jpg" alt="" />
-          <h3 class="about-header">DRESSAGE</h3>
+          <h3 class="text-uppercase lg-font">DRESSAGE</h3>
           <p class="small-text">
             Brittney went on to compete with the Region 5 Junior Team to win
             team Gold in the 2008 NAJRC with her horse. Wadi Draa. She then
@@ -108,9 +112,9 @@
             proper maintenance of older horse athletes and veterinary care grew.
           </p>
         </div>
-        <div class="about-section">
+        <div class="text-center col-xs-12 col-lg-4 float-left">
           <img class="about-image" src="images/klasic_training.jpg" alt="" />
-          <h3 class="about-header">KLASIC TRAINING</h3>
+          <h3 class="text-uppercase lg-font">KLASIC TRAINING</h3>
           <p class="small-text">
             After graduating from CSU San Marcos in Chemist she started working
             at Scripps Hospital part time to pursue her passion for teaching and
@@ -122,8 +126,8 @@
       </div>
     </div>
 
-    <div id="facility-container">
-      <h1 class="lg-font">Training Facility</h1>
+    <div id="facility" class="text-center">
+      <h1 class="text-center">Training Facility</h1>
       <hr />
       <p>
         <a href="https://farviewfarmsequestrian.com">Far View Farms</a> is an
@@ -137,16 +141,13 @@
       </p>
     </div>
 
-    <div id="testimonial-container">
-      <div>
-        <h1 class="lg-font center">Testimonials</h1>
+    <div id="testimonial-container" class="container">
+      <div class="text-center">
+        <h1>Testimonials</h1>
       </div>
-      <div class="testimonial-row" style="margin: auto">
-        <section class="testimonial-box">
-          <div class="blue-flower-container">
-            <img class="blue-flower" src="images/blue_blob.svg" alt="flower" />
-          </div>
-          <p class="testimonial">
+      <div class="row" style="margin: auto">
+        <section class="col-md-6 col-xs-12 testimonial-box">
+          <p class="px-2 testimonial">
             "I cannot begin to express how lucky we are to have found Brittney.
             I was at the end of the rope with my chestnut mare (enough said) who
             had some significant behavioral issues including regular bucking.
@@ -160,34 +161,45 @@
             her forever!"
           </p>
         </section>
-        <section class="testimonial-box">
-          <div class="blue-flower-container">
-            <img class="blue-flower" src="images/blue_blob.svg" alt="flower" />
-          </div>
-          <p class="testimonial">
-            "Here we go... <br />My mares and I began training with Brittney
-            last October 2020. She comes 4 days a week in which she rides my
-            mares and I get lessons twice a week. <br />Brittney is an excellent
-            rider. She is able to teach and impact confidence in both horses and
-            rider. She stresses safety and correct positioning of the rider. She
-            also thrives by exploring different exercises for my mares and
-            myself to find balance as well as relaxation in the various
-            movements needed in our Dressage training. <br />Brittney is
-            extremely conscientious about the horse's need. One of my mares has
-            a very "special" temperament and with patience and tact Brittney has
-            been able to give her the confidence and relaxation she needs and at
-            the game time push her enough to meet her demands in training.
-            <br />Brittney is a very supportive and dedicated trainer, always
-            conscious of and working with students individual needs. I highly
-            recommend her!"<br />
-            - Cristina B
+        <section class="col-md-6 col-xs-12 testimonial-box">
+          <p class="px-2 testimonial">
+            "Here we go... My mares and I began training with Brittney last
+            October 2020. She comes 4 days a week in which she rides my mares
+            and I get lessons twice a week. Brittney is an excellent rider. She
+            is able to teach and impact confidence in both horses and rider. She
+            stresses safety and correct positioning of the rider. She also
+            thrives by exploring different exercises for my mares and myself to
+            find balance as well as relaxation in the various movements needed
+            in our Dressage training. Brittney is extremely conscientious about
+            the horse's need. One of my mares has a very "special" temperament
+            and with patience and tact Brittney has been able to give her the
+            confidence and relaxation she needs and at the game time push her
+            enough to meet her demands in training. Brittney is a very
+            supportive and dedicated trainer, always conscious of and working
+            with students individual needs. I highly recommend her!" Cristina B
           </p>
         </section>
       </div>
     </div>
 
     <div>
-      <footer>&copy;2021 Klasic Training</footer>
+      <footer class="text-center">&copy;2021 Klasic Training</footer>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
