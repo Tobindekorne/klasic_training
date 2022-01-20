@@ -4,22 +4,17 @@
   padding: 0;
 }
 
+a,
+a:visited {
+  color: #7b00a9;
+}
+
 body {
   background-color: #d1d1d1;
   color: #7b00a9;
   font-family: 'Oswald', sans-serif;
   padding: 15px;
   padding-top: 150px;
-}
-
-nav {
-  background-color: #d1d1d1;
-}
-
-nav a {
-  width: 200px;
-  margin: auto;
-  color: #7b00a9;
 }
 
 header {
@@ -45,6 +40,16 @@ footer {
 }
 
 /* NAVBAR */
+nav {
+  background-color: #d1d1d1;
+}
+
+nav a {
+  width: 200px;
+  margin: auto;
+  color: #7b00a9;
+}
+
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -99,15 +104,12 @@ footer {
   padding: 5% 0;
 }
 
-.center {
+.side-text {
+  width: 50%;
+  max-height: 100%;
   text-align: center;
 }
 
-#logo {
-  width: 200px;
-}
-
-/* INTRO SECTION */
 .two-col-container {
   width: 100%;
   display: flex;
@@ -119,17 +121,19 @@ footer {
   text-align: center;
 }
 
+.center {
+  text-align: center;
+}
+
+#logo {
+  width: 200px;
+}
+
+/* INTRO SECTION */
 #intro-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.side-text {
-  width: 50%;
-  max-height: 100%;
-  text-align: center;
-  /* background-color: red; */
 }
 
 hr {
@@ -207,6 +211,27 @@ hr {
 /* FACILITY */
 #facility-container {
   text-align: center;
+}
+
+#training-image {
+  max-height: 216px;
+  width: 100%;
+  padding-right: 15px;
+  object-fit: contain;
+}
+
+.left {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.side-image--20 {
+  width: 20%;
+}
+
+.side-text--80 {
+  padding: 15px;
+  width: 80%;
 }
 
 /* TESTIMONIALS */
