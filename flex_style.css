@@ -229,7 +229,6 @@ hr {
 
 .testimonial {
   height: 100%;
-  vertical-align: middle;
 }
 
 /* LARGE SCREENS */
@@ -255,5 +254,13 @@ hr {
   .side-text,
   .testimonial-box {
     width: 100%;
+  }
+
+  .testimonial-box {
+    margin: 15px 0;
+  }
+
+  .lg-font {
+    font-size: 50px;
   }
 }
